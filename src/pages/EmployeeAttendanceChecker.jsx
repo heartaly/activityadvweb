@@ -91,9 +91,7 @@ function AttendanceChecker() {
         <div className="attendance-page">
             <div className="attendance-card">
                 <div className={`attendance-side attendance-side-left${result ? "" : " attendance-side-left-solo"}`}>
-                    <span className="attendance-tag">EMPLOYEE ATTENDANCE</span>
-                    <h1 className="attendance-heading">Attendance Checker</h1>
-                    <p className="attendance-subtitle">Check an employee's attendance status.</p>
+                    <h1 className="attendance-heading">Employee Attendance</h1>
 
                     <div className="attendance-field">
                         <label className="attendance-label">Employee Name</label>
