@@ -1,0 +1,338 @@
+.attendance-page {
+    min-height: calc(100vh - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px 40px;
+}
+
+.attendance-card {
+    width: 100%;
+    max-width: 860px;
+    transition: max-width 0.15s ease;
+    display: flex;
+    background-color: #14161c;
+    border: 1px solid #2a2d38;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.attendance-side {
+    flex: 1;
+    min-width: 0;
+    padding: 32px 30px;
+}
+
+.attendance-side-left {
+    border-right: 1px solid #2a2d38;
+}
+
+.attendance-side-left-solo {
+    border-right: none;
+}
+
+.attendance-card:has(.attendance-side-left-solo) {
+    max-width: 420px;
+}
+
+.attendance-side-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attendance-tag {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #6b7080;
+    margin-bottom: 8px;
+}
+
+.attendance-heading {
+    color: #f0f1f5;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 6px;
+}
+
+.attendance-subtitle {
+    color: #8b90a0;
+    font-size: 14px;
+    margin: 0 0 26px;
+}
+
+.attendance-field {
+    margin-bottom: 16px;
+}
+
+.attendance-label {
+    display: block;
+    color: #b6bac8;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.attendance-input {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1a1c24;
+    border: 1px solid #333744;
+    border-radius: 6px;
+    color: #f0f1f5;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 11px 14px;
+    outline: none;
+    transition: border-color 0.15s ease;
+}
+
+.attendance-input::placeholder {
+    color: #5a5f70;
+}
+
+.attendance-input:focus {
+    border-color: #6b7080;
+}
+
+.attendance-helper {
+    margin: 6px 0 0;
+    font-size: 12px;
+    color: #6b7080;
+}
+
+.attendance-error {
+    color: #e08080;
+    font-size: 13px;
+    margin: 0 0 14px;
+}
+
+.attendance-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.attendance-btn {
+    flex: 1;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.attendance-btn-primary {
+    background-color: #3d4152;
+    color: #f0f1f5;
+}
+
+.attendance-btn-primary:hover {
+    background-color: #4a4f63;
+}
+
+.attendance-btn-secondary {
+    background-color: transparent;
+    color: #8b90a0;
+    border: 1px solid #333744;
+}
+
+.attendance-btn-secondary:hover {
+    background-color: #1a1c24;
+}
+
+/* ID Card — flat, landscape, real-ID style */
+
+.id-card {
+    width: 100%;
+    background-color: #14161c;
+    border: 1px solid #333744;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.id-card-topbar {
+    background-color: #1a1c24;
+    border-bottom: 1px solid #2a2d38;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.id-card-org {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f0f1f5;
+}
+
+.id-card-org-sub {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #6b7080;
+}
+
+.id-card-body {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+
+.id-card-photo-col {
+    flex-shrink: 0;
+    width: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.id-card-photo {
+    width: 84px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #333744;
+    border-radius: 4px;
+    background-color: #1a1c24;
+}
+
+.id-card-code {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #8b90a0;
+    border: 1px solid #333744;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.id-card-details-col {
+    flex: 1;
+    min-width: 0;
+}
+
+.id-card-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f0f1f5;
+}
+
+.id-card-sublabel {
+    display: block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #6b7080;
+    margin-bottom: 10px;
+}
+
+.id-card-info {
+    border-top: 1px solid #2a2d38;
+    padding-top: 8px;
+}
+
+.id-card-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.id-card-info-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: #6b7080;
+}
+
+.id-card-info-value {
+    font-size: 12px;
+    font-weight: 600;
+    color: #c5c9d6;
+    text-align: right;
+}
+
+.id-card-status-badge {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.id-card-on-time .id-card-status-badge {
+    color: #14161c;
+    background-color: #4caf6f;
+}
+
+.id-card-late .id-card-status-badge {
+    color: #14161c;
+    background-color: #e05a5a;
+}
+
+.id-card-very-late .id-card-status-badge {
+    color: #f0f1f5;
+    background-color: #b3312f;
+}
+
+.id-card-footer {
+    border-top: 1px solid #2a2d38;
+    background-color: #1a1c24;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.id-card-barcode {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 16px;
+}
+
+.id-card-barcode span {
+    display: block;
+    width: 2px;
+    background-color: #3d4152;
+}
+
+.id-card-barcode span:nth-child(3n) {
+    height: 100%;
+}
+
+.id-card-barcode span:nth-child(3n + 1) {
+    height: 55%;
+}
+
+.id-card-barcode span:nth-child(3n + 2) {
+    height: 80%;
+}
+
+.id-card-valid {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    color: #565b6c;
+}
+
+@media (max-width: 720px) {
+    .attendance-card {
+        flex-direction: column;
+    }
+
+    .attendance-side-left {
+        border-right: none;
+        border-bottom: 1px solid #2a2d38;
+    }
+}

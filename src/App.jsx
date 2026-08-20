@@ -3,7 +3,7 @@ import './App.css'
 import Navbar from './components/Navbar';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import AttendanceChecker from "./pages/AttendanceChecker";
+import AttendanceChecker from "./pages/EmployeeAttendanceChecker";
 import ElectricityBill from "./pages/ElectricityBill";
 import GradeEvaluation from "./pages/GradeEvaluation";
 import PasswordChecker from "./pages/PasswordChecker";
