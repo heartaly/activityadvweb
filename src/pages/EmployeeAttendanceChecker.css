@@ -12,7 +12,7 @@
     transition: max-width 0.15s ease;
     display: flex;
     background-color: #14161c;
-    border: 1px solid #2a2d38;
+    border: 1px solid #4a4f60;
     border-radius: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
@@ -139,15 +139,15 @@
 
 .id-card {
     width: 100%;
-    background-color: #14161c;
-    border: 1px solid #333744;
+    background-color: #ffffff;
+    border: 1px solid #1e3f73;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .id-card-topbar {
-    background-color: #1a1c24;
-    border-bottom: 1px solid #2a2d38;
+    background-color: #2b579a;
+    border-bottom: 1px solid #1e3f73;
     padding: 10px 16px;
     display: flex;
     justify-content: space-between;
@@ -158,14 +158,14 @@
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #f0f1f5;
+    color: #ffffff;
 }
 
 .id-card-org-sub {
     font-size: 9px;
     font-weight: 600;
     letter-spacing: 0.8px;
-    color: #6b7080;
+    color: #c3d3ec;
 }
 
 .id-card-body {
@@ -187,17 +187,17 @@
     width: 84px;
     height: 100px;
     object-fit: cover;
-    border: 1px solid #333744;
+    border: 1px solid #c7d2e3;
     border-radius: 4px;
-    background-color: #1a1c24;
+    background-color: #eef2f9;
 }
 
 .id-card-code {
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.4px;
-    color: #8b90a0;
-    border: 1px solid #333744;
+    color: #2b579a;
+    border: 1px solid #c7d2e3;
     border-radius: 4px;
     padding: 2px 6px;
 }
@@ -211,7 +211,7 @@
     margin: 0;
     font-size: 16px;
     font-weight: 700;
-    color: #f0f1f5;
+    color: #1c1f26;
 }
 
 .id-card-sublabel {
@@ -224,7 +224,7 @@
 }
 
 .id-card-info {
-    border-top: 1px solid #2a2d38;
+    border-top: 1px solid #c7d2e3;
     padding-top: 8px;
 }
 
@@ -245,7 +245,7 @@
 .id-card-info-value {
     font-size: 12px;
     font-weight: 600;
-    color: #c5c9d6;
+    color: #1c1f26;
     text-align: right;
 }
 
@@ -273,8 +273,8 @@
 }
 
 .id-card-footer {
-    border-top: 1px solid #2a2d38;
-    background-color: #1a1c24;
+    border-top: 1px solid #1e3f73;
+    background-color: #2b579a;
     padding: 8px 16px;
     display: flex;
     justify-content: space-between;
@@ -291,7 +291,7 @@
 .id-card-barcode span {
     display: block;
     width: 2px;
-    background-color: #3d4152;
+    background-color: #c3d3ec;
 }
 
 .id-card-barcode span:nth-child(3n) {
@@ -310,7 +310,7 @@
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 0.6px;
-    color: #565b6c;
+    color: #c3d3ec;
 }
 
 @media (max-width: 720px) {
